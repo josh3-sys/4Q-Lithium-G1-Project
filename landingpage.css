@@ -1,0 +1,118 @@
+body {
+    background-image: url("landingpage-background.png");
+}
+
+#description-box {
+    font-family: "Geo", sans-serif;
+    position: fixed;
+    left: 90px;
+    top: 45px;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    background: #b4e08d;
+    color: #485e34;
+}
+
+#description-box header{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#description-box ol li{
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#snek {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 64%;
+    right: 9%;
+}
+
+#title{
+    position: fixed;
+    top: 10%;
+    left: 50%;
+}
+
+#gametitle {
+    font-family: "Geo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 170px;
+    color: white;
+    text-shadow: 2px 2px #413e3e;
+}
+
+form {
+    position: relative;
+    top: 30%;
+    height: 200px;
+}
+
+#username-label {
+    font-family:'Courier New', Courier, monospace ;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 2px #413e3e;
+    font-size: 20px;
+}
+
+#username {
+    height: 23px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#login-button {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 30px;
+    background-color: greenyellow;
+    color: black;
+    border-radius: 10px;
+    border: grey solid;
+    position: relative;
+    top: 25%;
+    transform: translateX(-50%);
+}
+
+#login-button:active{
+    color: white;
+    background-color: green;
+}
+
+#play-button {
+    text-decoration: none;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 30px;
+    background-color: greenyellow;
+    color: black;
+    border-radius: 10px;
+    border: grey solid;
+    position: relative;
+    top: 50%;
+    left: -33%;
+}
+
+#play-button:active {
+    color: white;
+    background-color: green;
+}
+
+#username-display {
+    color: black;
+}

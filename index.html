@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Snake</title>
+
+        <!-- link to fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="landingpage.css">
+    </head>
+    <body>
+        <section id="description-box">
+            <header>How To Play?</header>
+            <ol id="description-info">
+                <li>The player controls a snake that moves in four directions only.</li>
+                <li>The snake must not touch its own body or any wall, otherwise gameover.</li>
+                <li>Apples will spawn in the area. Once eaten, adds +1 to your score.</li>
+                <li>Player gains +1 length per apple eaten.</li>
+                <li>Try to get the highest score without losing!</li>
+            </ol>
+        </section>
+
+        <div id="username-display"></div>
+       
+        <img src="snek.png" id="snek">
+
+        <section id="title">
+            <header id="gametitle">SNAKE</header>
+            <form onsubmit="return false;">
+                <input type="text" placeholder="Enter your username" id="username" name="username">
+                <button type="button" id="login-button" onclick="userLogin(); return false" >LOGIN</button>
+                <a href="gamepage.html" id="play-button">Play</a>
+            </form>
+        </section>
+        
+        <script src="landingpage.js"></script>
+    </body>
+
+</html>
