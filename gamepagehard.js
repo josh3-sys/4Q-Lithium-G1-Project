@@ -11,7 +11,7 @@
   let score = 0;
   let username = localStorage.getItem("username");
 
-  let highScore = localStorage.getItem(`${username}-high-score-normal`) || 0;
+  let highScore = localStorage.getItem(`${username}-high-score-hard`) || 0;
   highScoreElement.innerText = `High Score: ${highScore}`;
 
   const changeFoodPosition = () => {
@@ -52,7 +52,7 @@
       score++;
 
       highScore = score >= highScore ? score : highScore;
-      localStorage.setItem(`${username}-high-score-normal`, highScore);
+      localStorage.setItem(`${username}-high-score-hard`, highScore);
       scoreElement.innerText = `Score: ${score}`;
       highScoreElement.innerText = `High Score: ${highScore}`;
     }
@@ -85,7 +85,7 @@
   };
 
   changeFoodPosition();
-  setIntervalId = setInterval(initGame, 125);
+  setIntervalId = setInterval(initGame, 80);
   document.addEventListener("keydown", changeDirection);
 
   document.getElementById("account").innerHTML = username + "'s account";
